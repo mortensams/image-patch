@@ -1,5 +1,5 @@
 name: Patch vulnerable images 
- on: 
+on: 
    # change these to your preferred event triggers 
    # https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows 
    push: 
@@ -8,7 +8,7 @@ name: Patch vulnerable images
      paths-ignore: 
        - '**.md' 
    workflow_dispatch: 
- jobs: 
+jobs: 
    patch: 
      runs-on: ubuntu-latest 
      # used for pushing patched image to GHCR 
