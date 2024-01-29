@@ -20,7 +20,7 @@ jobs:
        matrix: 
          # provide relevant list of images to scan on each run 
          images: 
-           - "registry.access.redhat.com/ubi9/ubi-minimal" 
+           - "registry.access.redhat.com/ubi9/ubi-minimal:9.3-1552" 
            - "docker.io/library/hello-world:latest" 
      steps: 
        # generate trivy report for fixable OS package vulnerabilities 
